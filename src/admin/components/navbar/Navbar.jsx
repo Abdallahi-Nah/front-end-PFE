@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
 import Switch from '@mui/material/Switch';
@@ -5,11 +6,14 @@ import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
+=======
+>>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
 import "./Navbar.scss";
 
 const Navbar = () => {
   return (
     <>
+<<<<<<< HEAD
       <div className="navbar">
         <div className="navbarContainer">
           <div className="search">
@@ -44,6 +48,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+=======
+      <div className="navbar">Navbar</div>
+>>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
     </>
   );
 };

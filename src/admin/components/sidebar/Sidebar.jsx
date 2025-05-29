@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import HomeIcon from '@mui/icons-material/Home';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import SchoolIcon from '@mui/icons-material/School';
@@ -7,6 +8,8 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import GroupIcon from '@mui/icons-material/Group';
 import HailIcon from '@mui/icons-material/Hail';
 import LogoutIcon from '@mui/icons-material/Logout';
+=======
+>>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
 import "./Sidebar.scss";
 
 const Sidebar = () => {
@@ -14,6 +17,7 @@ const Sidebar = () => {
     <>
       <div className="sidebar">
         <div className="top">
+<<<<<<< HEAD
             <span className="logo">
               FST-UN
             </span>
@@ -64,6 +68,11 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
+=======
+            <span className="logo">UN-FST</span>
+        </div>
+        <div className="bottom">bottom</div>
+>>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
       </div>
     </>
   );

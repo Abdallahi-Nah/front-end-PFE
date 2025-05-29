@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar {
     height: 50px;
     display: flex;
@@ -80,5 +81,12 @@
                 }
             }
         }
+=======
+.home {
+    display: flex;
+    .homeContainer {
+        flex: 6;
+        background-color: blue;
+>>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
     }
 }
