@@ -1,10 +1,19 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
 .navbar {
     height: 50px;
     display: flex;
     align-items: center;
     font-size: 14px;
+<<<<<<< HEAD
     color: #444444;
     background-color: #FFFFFF;
+=======
+    color: #333;
+    background-color: whitesmoke;
+>>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
     border-bottom: 1px solid lightgray;
 
     .navbarContainer {
@@ -80,5 +89,15 @@
                 }
             }
         }
+<<<<<<< HEAD
+=======
+=======
+.home {
+    display: flex;
+    .homeContainer {
+        flex: 6;
+        background-color: blue;
+>>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
+>>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
     }
 }
