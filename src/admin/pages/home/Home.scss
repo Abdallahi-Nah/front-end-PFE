@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  .homeContainer {
+    flex: 6;
+    background-color: #F5F5F5;
+    color: #000000;
+
+    .widgets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: space-between;
+
+      .widget {
+        flex: 1 1 calc(33.33% - 13.33px); // 3 colonnes sur écran large
+        max-width: calc(33.33% - 13.33px);
+
+        @media (max-width: 768px) {
+          flex: 1 1 100%;
+          max-width: 300px; // limite la largeur max en mobile
+          margin: 0 auto; // centre le widget
+        }
+      }
+    }
+  }
+}
