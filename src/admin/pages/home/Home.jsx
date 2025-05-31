@@ -1,7 +1,6 @@
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import "./Home.scss";
-<<<<<<< HEAD
 import Widget from "../../components/widget/Widget";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import SchoolIcon from "@mui/icons-material/School";
@@ -9,8 +8,6 @@ import ViewModuleIcon from "@mui/icons-material/ViewModule";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import GroupIcon from "@mui/icons-material/Group";
 import HailIcon from "@mui/icons-material/Hail";
-=======
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
 
 const Home = () => {
   return (
@@ -19,7 +16,6 @@ const Home = () => {
         <Sidebar />
         <div className="homeContainer">
           <Navbar />
-<<<<<<< HEAD
           <div className="widgets">
             <Widget
               title="LES DEPARTEMENTS"
@@ -52,8 +48,6 @@ const Home = () => {
               icon={<GroupIcon className="icon" />}
             />
           </div>
-=======
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
         </div>
       </div>
     </>

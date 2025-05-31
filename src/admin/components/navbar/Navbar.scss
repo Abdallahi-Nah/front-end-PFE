@@ -1,103 +1,84 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
 .navbar {
-    height: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444444;
+  background-color: #ffffff;
+  border-bottom: 1px solid lightgray;
+
+  .navbarContainer {
     display: flex;
+    width: 100%;
     align-items: center;
-    font-size: 14px;
-<<<<<<< HEAD
-    color: #444444;
-    background-color: #FFFFFF;
-=======
-    color: #333;
-    background-color: whitesmoke;
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
-    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+    padding: 20px;
 
-    .navbarContainer {
-        display: flex;
+    .search {
+      display: flex;
+      width: 30%;
+      align-items: center;
+      padding: 3px;
+      border: 0.5px solid lightgray;
+
+      input {
         width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
+        border: none;
+        outline: none;
+        background: transparent;
 
-        .search {
-            display: flex;
-            width: 30%;
-            align-items: center;
-            padding: 3px;
-            border: 0.5px solid lightgray;
-
-            input {
-                width: 100%;
-                border: none;
-                outline: none;
-                background: transparent;
-
-                &::placeholder {
-                    font-size: 12px;
-                    padding-left: 5px;
-                }
-            }
+        &::placeholder {
+          font-size: 12px;
+          padding-left: 5px;
         }
-        
-        .items {
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-
-            .item {
-                position: relative;
-                display: flex;
-                align-items: center;
-                margin-right: 20px;
-
-                .icon {
-                    font-size: 25px;
-                    cursor: pointer;
-                }
-
-                span {
-                    padding-left: 5px;
-                }
-
-                .counter {
-                    position: absolute;
-                    width: 15px;
-                    height: 15px;
-                    background-color: red;
-                    border-radius: 50%;
-                    color: white;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 10px;
-                    font-weight: bold;
-                    top: -5px;
-                    right: -5px;
-                }
-
-                .profileImg {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    border: 1px solid #0A9048;
-                    cursor: pointer;
-                }
-            }
-        }
-<<<<<<< HEAD
-=======
-=======
-.home {
-    display: flex;
-    .homeContainer {
-        flex: 6;
-        background-color: blue;
->>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
+      }
     }
+
+    .items {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+
+      .item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        .icon {
+          font-size: 25px;
+          cursor: pointer;
+        }
+
+        span {
+          padding-left: 5px;
+        }
+
+        .counter {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: red;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: bold;
+          top: -5px;
+          right: -5px;
+        }
+
+        .profileImg {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid #0a9048;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

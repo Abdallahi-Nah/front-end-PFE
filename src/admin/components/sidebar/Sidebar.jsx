@@ -1,21 +1,12 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
-import HomeIcon from '@mui/icons-material/Home';
-import ApartmentIcon from '@mui/icons-material/Apartment';
-import SchoolIcon from '@mui/icons-material/School';
-import ViewModuleIcon from '@mui/icons-material/ViewModule';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import GroupIcon from '@mui/icons-material/Group';
-import HailIcon from '@mui/icons-material/Hail';
-import LogoutIcon from '@mui/icons-material/Logout';
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
+import HomeIcon from "@mui/icons-material/Home";
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import SchoolIcon from "@mui/icons-material/School";
+import ViewModuleIcon from "@mui/icons-material/ViewModule";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import GroupIcon from "@mui/icons-material/Group";
+import HailIcon from "@mui/icons-material/Hail";
+import LogoutIcon from "@mui/icons-material/Logout";
 import "./Sidebar.scss";
 
 const Sidebar = () => {
@@ -23,18 +14,8 @@ const Sidebar = () => {
     <>
       <div className="sidebar">
         <div className="top">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
-            <span className="logo">
-              FST-UN
-            </span>
+          <span className="logo">FST-UN</span>
         </div>
-<<<<<<< HEAD
-=======
-        <hr />
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
         <div className="bottom">
           <ul>
             <p className="title">Main</p>
@@ -80,14 +61,6 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-<<<<<<< HEAD
-=======
-=======
-            <span className="logo">UN-FST</span>
-        </div>
-        <div className="bottom">bottom</div>
->>>>>>> 0541798ca4dac0feaa48a92f69233205d0c7c5f4
->>>>>>> 6c31e9ff3a0c2d968a94e138158c036947ffe5ef
       </div>
     </>
   );
