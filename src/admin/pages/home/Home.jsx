@@ -8,6 +8,8 @@ import ViewModuleIcon from "@mui/icons-material/ViewModule";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import GroupIcon from "@mui/icons-material/Group";
 import HailIcon from "@mui/icons-material/Hail";
+import Featured from "../../components/featured/Featured";
+import Chart from "../../components/chart/Chart";
 
 const Home = () => {
   return (
@@ -48,8 +50,12 @@ const Home = () => {
               icon={<GroupIcon className="icon" />}
             />
           </div>
+          <div className="charts">
+            <Featured />
+            <Chart />
         </div>
       </div>
+    </div>
     </>
   );
 };
