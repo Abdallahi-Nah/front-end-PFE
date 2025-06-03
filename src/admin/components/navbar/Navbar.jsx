@@ -7,6 +7,7 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import ListIcon from "@mui/icons-material/List";
 import "./Navbar.scss";
 
+
 const Navbar = () => {
   return (
     <>
@@ -39,7 +40,7 @@ const Navbar = () => {
               <ListIcon className="icon" />
             </div>
             <div className="item">
-              <img src="images/teaher-1.jpg" alt="" className={"profileImg"} />
+              <img src="/images/teaher-1.jpg" alt="" className={"profileImg"} />
             </div>
           </div>
         </div>

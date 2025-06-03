@@ -6,7 +6,7 @@
 
   .top {
     display: flex;
-    height: 50px;
+    height: 110px;
     align-items: center;
     justify-self: center;
 
@@ -19,7 +19,7 @@
 
   .bottom {
     padding-left: 10px;
-    border-top: 1px solid lightgray;
+    // border-top: 1px solid lightgray;
 
     ul {
       list-style: none;
@@ -46,13 +46,13 @@
 
         .icon {
           font-size: 22px;
-          color: #616161;
+          color: #222222;
         }
 
         span {
           font-size: 13px;
           font-weight: 700;
-          color: #616161;
+          color: #222222;
           margin-left: 10px;
         }
       }

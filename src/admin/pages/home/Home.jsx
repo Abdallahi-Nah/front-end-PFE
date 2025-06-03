@@ -14,10 +14,10 @@ import Chart from "../../components/chart/Chart";
 const Home = () => {
   return (
     <>
-      <div className="home">
-        <Sidebar />
-        <div className="homeContainer">
-          <Navbar />
+      <div>
+        {/* <Sidebar /> */}
+        <div>
+          {/* <Navbar /> */}
           <div className="widgets">
             <Widget
               title="LES DEPARTEMENTS"

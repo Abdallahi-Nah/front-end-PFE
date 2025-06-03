@@ -1,4 +1,3 @@
-import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import "./Widget.scss";
 
 const Widget = ({ title, counter, icon }) => {
