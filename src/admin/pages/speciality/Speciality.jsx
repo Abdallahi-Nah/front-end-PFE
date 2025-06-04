@@ -73,7 +73,7 @@ const rows = [
   { id: 45, nom: "Éthique et Protection des Données" },
 ];
 
-7
+
 const actionColumn = [
   {
     field: "action",
@@ -99,7 +99,7 @@ const actionColumn = [
 
 const Speciality = () => {
   return (
-    <>
+    <>      
       <div className="speciality">
         <DataTable
           title="Liste des départements"
