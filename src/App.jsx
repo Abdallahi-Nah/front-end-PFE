@@ -13,6 +13,7 @@ import {
   Mod,
   Single,
   SingleSpeciality,
+  SingleModule,
   Matiere,
   Emplois,
   Teacher,
@@ -42,6 +43,7 @@ function App() {
               <Route path="admin/module" element={<Mod />} />
               <Route path="admin/department/single" element={<Single />} />
               <Route path="admin/speciality/single" element={<SingleSpeciality />} />
+              <Route path="admin/module/single" element={<SingleModule />} />
               <Route path="admin/matiere" element={<Matiere />} />
               <Route path="admin/emplois" element={<Emplois />} />
               <Route path="admin/teacher" element={<Teacher />} />

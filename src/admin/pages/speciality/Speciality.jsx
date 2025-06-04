@@ -5,7 +5,7 @@ import Filter from "../../components/filter/Filter";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "nom", headerName: "Nom", width: 270 },
+  { field: "nom", headerName: "Nom", width: 200 },
 ];
 
 const rows = [
@@ -102,7 +102,7 @@ const Speciality = () => {
     <>      
       <div className="speciality">
         <DataTable
-          title="Liste des départements"
+          title="Liste des spécialités"
           columns={columns}
           rows={rows}
           actionColumn={actionColumn}

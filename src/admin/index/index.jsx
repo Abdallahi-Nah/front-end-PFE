@@ -8,6 +8,7 @@ export { default as Speciality } from "../pages/speciality/Speciality";
 export { default as Mod } from "../pages/module/Module";
 export { default as Single } from "../pages/single/Single";
 export { default as SingleSpeciality } from "../pages/single/SingleSpeciality";
+export { default as SingleModule } from "../pages/single/SingleModule";
 export { default as Matiere } from "../pages/matiere/Matiere";
 export { default as Emplois } from "../pages/emploi/Emplois";
 export { default as Teacher } from "../pages/teacher/Teacher";
