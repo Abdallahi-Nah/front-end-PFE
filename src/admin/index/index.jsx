@@ -1,0 +1,14 @@
+export { default as Home } from "../pages/home/Home";
+export { default as Department } from "../pages/department/Department";
+export { default as DepartmentDetails } from "../pages/department/DepartmentDetails";
+export { default as NewDepartment } from "../pages/new/NewDepartment";
+export { default as NewSpeciality } from "../pages/new/NewSpeciality";
+export { default as NewUser } from "../pages/new/NewUser";
+export { default as Speciality } from "../pages/speciality/Speciality";
+export { default as Mod } from "../pages/module/Module";
+export { default as Single } from "../pages/single/Single";
+export { default as SingleSpeciality } from "../pages/single/SingleSpeciality";
+export { default as Matiere } from "../pages/matiere/Matiere";
+export { default as Emplois } from "../pages/emploi/Emplois";
+export { default as Teacher } from "../pages/teacher/Teacher";
+export { default as Student } from "../pages/student/Student";
