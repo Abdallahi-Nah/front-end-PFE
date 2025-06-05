@@ -7,7 +7,7 @@ const NewUser = () => {
       <div className="new">
         <div className="newContainer">
           <div className="top">
-            <h1>Ajouter un utilisateur</h1>
+            <h1>Ajouter ou Modifier un utilisateur</h1>
           </div>
           <div className="bottom">
             <div className="left">

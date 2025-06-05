@@ -27,7 +27,7 @@ const NewModule = () => {
       <div className="new">
         <div className="newContainer">
           <div className="top">
-            <h1>Ajouter une module</h1>
+            <h1>Ajouter ou Modifier une module</h1>
           </div>
           <div className="bottom">
             <div className="right">

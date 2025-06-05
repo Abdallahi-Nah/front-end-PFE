@@ -18,7 +18,7 @@ const NewMatiere = () => {
       <div className="new">
         <div className="newContainer">
           <div className="top">
-            <h1>Ajouter une matière</h1>
+            <h1>Ajouter ou Modifier une matière</h1>
           </div>
           <div className="bottom">
             <div className="right">

@@ -53,7 +53,7 @@ const DataTable = ({ columns, rows, actionColumn, link, type="", children }) => 
           </div>
           <DataGrid
             rows={rows}
-            columns={columns.concat(actionColumn)}
+            columns={actionColumn ? columns.concat(actionColumn) : columns}
             initialState={{ pagination: { paginationModel } }}
             pageSizeOptions={[5, 10]}
             checkboxSelection

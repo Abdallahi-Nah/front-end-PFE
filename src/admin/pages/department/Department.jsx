@@ -1,7 +1,6 @@
 import "./Department.scss";
 import DataTable from "../../components/datatable/DataTable";
 import { Link } from "react-router-dom";
-import Filter from "../../components/filter/Filter";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },

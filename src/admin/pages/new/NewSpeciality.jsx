@@ -18,7 +18,7 @@ const NewSpeciality = () => {
       <div className="new">
         <div className="newContainer">
           <div className="top">
-            <h1>Ajouter une spécialité</h1>
+            <h1>Ajouter ou Modifier une spécialité</h1>
           </div>
           <div className="bottom">
             <div className="right">
