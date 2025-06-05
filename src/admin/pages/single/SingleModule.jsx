@@ -13,7 +13,6 @@ const matieresInformatiqueTheorique = [
   "Cryptographie Théorique" ,
 ];
 
-
 const SingleModule = () => {
   return (
     <>

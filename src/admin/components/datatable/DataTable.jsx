@@ -43,7 +43,7 @@ const DataTable = ({ columns, rows, actionColumn, link, type="", children }) => 
   return (
     <>
       <div className="datatable">
-        <Paper sx={{ height: 400, width: "70%", margin: "auto", padding: 2 }}>
+        <Paper sx={{ height: 400, width: "80%", margin: "auto", padding: 2 }}>
           <div className="datatableTitle">
             <Search />
             {type !== "" && children}

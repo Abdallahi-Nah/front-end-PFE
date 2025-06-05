@@ -10,6 +10,8 @@ import {
   NewDepartment,
   NewSpeciality,
   Speciality,
+  NewModule,
+  NewMatiere,
   Mod,
   Single,
   SingleSpeciality,
@@ -41,6 +43,8 @@ function App() {
               <Route path="admin/speciality" element={<Speciality />} />
               <Route path="admin/speciality/new-speciality" element={<NewSpeciality />} />
               <Route path="admin/module" element={<Mod />} />
+              <Route path="admin/module/new-module" element={<NewModule />} />
+              <Route path="admin/matiere/new-matiere" element={<NewMatiere />} />
               <Route path="admin/department/single" element={<Single />} />
               <Route path="admin/speciality/single" element={<SingleSpeciality />} />
               <Route path="admin/module/single" element={<SingleModule />} />

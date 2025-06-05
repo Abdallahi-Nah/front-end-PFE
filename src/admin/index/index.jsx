@@ -3,6 +3,8 @@ export { default as Department } from "../pages/department/Department";
 export { default as DepartmentDetails } from "../pages/department/DepartmentDetails";
 export { default as NewDepartment } from "../pages/new/NewDepartment";
 export { default as NewSpeciality } from "../pages/new/NewSpeciality";
+export { default as NewModule } from "../pages/new/NewModule";
+export { default as NewMatiere } from "../pages/new/NewMatiere";
 export { default as NewUser } from "../pages/new/NewUser";
 export { default as Speciality } from "../pages/speciality/Speciality";
 export { default as Mod } from "../pages/module/Module";

@@ -110,7 +110,7 @@ const Module = () => {
           link="new-module"
           type="module"
         >
-          <Filter title="speciality" />
+          <Filter title="spécialité" />
         </DataTable>
       </div>
     </>
