@@ -70,9 +70,8 @@ const rows = [
   { id: 42, nom: "Statistiques pour Data Science" },
   { id: 43, nom: "Visualisation de Données" },
   { id: 44, nom: "Big Data et Hadoop" },
-  { id: 45, nom: "Python pour Data Science" }
+  { id: 45, nom: "Python pour Data Science" },
 ];
-
 
 const actionColumn = [
   {
@@ -90,7 +89,14 @@ const actionColumn = [
               Voir
             </Link>
           </span>
-          <span className="updateButton">Modifier</span>
+          <span className="updateButton">
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="new-module"
+            >
+              Modifier
+            </Link>
+          </span>
           <span className="deleteButton">Supprimer</span>
         </div>
       );

@@ -71,9 +71,8 @@ const rows = [
   { id: 42, nom: "Statistiques pour Data Science", credit: 4 },
   { id: 43, nom: "Visualisation de Données", credit: 4 },
   { id: 44, nom: "Big Data et Hadoop", credit: 4 },
-  { id: 45, nom: "Python pour Data Science", credit: 4 }
+  { id: 45, nom: "Python pour Data Science", credit: 4 },
 ];
-
 
 const actionColumn = [
   {
@@ -83,7 +82,14 @@ const actionColumn = [
     renderCell: () => {
       return (
         <div className="cellAction">
-          <span className="updateButton">Modifier</span>
+          <span className="updateButton">
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="new-matiere"
+            >
+              Modifier
+            </Link>
+          </span>
           <span className="deleteButton">Supprimer</span>
         </div>
       );

@@ -73,7 +73,6 @@ const rows = [
   { id: 45, nom: "Éthique et Protection des Données" },
 ];
 
-
 const actionColumn = [
   {
     field: "action",
@@ -83,13 +82,21 @@ const actionColumn = [
       return (
         <div className="cellAction">
           <span className="viewButton">
-            <Link style={{ textDecoration: "none", color: "inherit" }}
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
               to="single"
             >
               Voir
             </Link>
           </span>
-          <span className="updateButton">Modifier</span>
+          <span className="updateButton">
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="new-speciality"
+            >
+              Modifier
+            </Link>
+          </span>
           <span className="deleteButton">Supprimer</span>
         </div>
       );
@@ -99,7 +106,7 @@ const actionColumn = [
 
 const Speciality = () => {
   return (
-    <>      
+    <>
       <div className="speciality">
         <DataTable
           title="Liste des spécialités"

@@ -28,13 +28,21 @@ const actionColumn = [
       return (
         <div className="cellAction">
           <span className="viewButton">
-            <Link style={{ textDecoration: "none", color: "inherit" }}
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
               to="single"
             >
               Voir
             </Link>
           </span>
-          <span className="updateButton">Modifier</span>
+          <span className="updateButton">
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="new-department"
+            >
+              Modifier
+            </Link>
+          </span>
           <span className="deleteButton">Supprimer</span>
         </div>
       );
@@ -52,8 +60,7 @@ const Department = () => {
           rows={rows}
           actionColumn={actionColumn}
           link="new-department"
-        >
-        </DataTable>
+        ></DataTable>
       </div>
     </>
   );
