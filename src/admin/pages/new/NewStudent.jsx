@@ -1,30 +1,21 @@
 import { DriveFolderUploadOutlined } from "@mui/icons-material";
-import "./NewTeacher.scss";
+import "./NewStudent.scss";
 import { useState } from "react";
 
-const matieres = [
-  { id: 1, nom: "Analyse Mathématique" },
-  { id: 2, nom: "Algèbre Linéaire I" },
-  { id: 3, nom: "Algèbre Linéaire II" },
-  { id: 4, nom: "Statistiques" },
-  { id: 5, nom: "Algèbre Genéral" },
-  { id: 6, nom: "Analyse Numérique" },
-];
-
-const NewTeacher = () => {
+const NewStudent = () => {
   const [file, setFile] = useState(null);
 
   return (
     <div className="new">
       <div className="newContainer">
         <div className="top">
-          <h1>Ajouter ou Modifier un enseignant</h1>
+          <h1>Ajouter ou Modifier un étudiant</h1>
         </div>
         <div className="bottom">
           <div className="imageContainer">
             <img
               src={file ? URL.createObjectURL(file) : "/images/teaher-1.jpg"}
-              alt="teacher"
+              alt="student"
               className="image"
             />
             <div className="uploadSection">
@@ -80,31 +71,7 @@ const NewTeacher = () => {
                 <input
                   type="text"
                   id="dateNaissance"
-                  placeholder="1989-05-15"
-                />
-              </div>
-              <div className="formInput">
-                <label htmlFor="diplomes">Les diplômes</label>
-                <input
-                  type="text"
-                  id="diplomes"
-                  placeholder="Doctorat en Mathématiques - Université de la Sorbonne, Paris"
-                />
-              </div>
-              <div className="formInput">
-                <input
-                  style={{ marginTop: "26px" }}
-                  type="text"
-                  id="diplomes"
-                  placeholder="Master en Analyse Mathématique - Université Cheikh Anta Diop, Dakar"
-                />
-              </div>
-              <div className="formInput">
-                <input
-                  style={{ marginTop: "26px" }}
-                  type="text"
-                  id="diplomes"
-                  placeholder="Licence en Mathématiques Appliquées - Université de Nouakchott"
+                  placeholder="1999-05-15"
                 />
               </div>
               <div className="formInput">
@@ -116,25 +83,12 @@ const NewTeacher = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="anneesExperience">Années d'expérience</label>
-                <input type="text" id="anneesExperience" placeholder="4" />
-              </div>
-              <div className="formInput">
-                <label htmlFor="matiere">Les matières qu'il enseigne</label>
-                <select id="matiere">
-                  <option value="" style={{ color: "#F5F5F5" }}>
-                    -- Choisir une matière --
-                  </option>
-                  {matieres.map((mat) => (
-                    <option key={mat.id} value={mat.id}>
-                      {mat.nom}
-                    </option>
-                  ))}
-                </select>
+                <label htmlFor="matricule">Matricule</label>
+                <input type="text" id="matricule" placeholder="C16655" />
               </div>
               <div
                 style={{
-                  gridColumn: "1 / -1", // occupe toute la largeur du grid (1 à la dernière colonne)
+                  gridColumn: "1 / -1",
                   display: "flex",
                   justifyContent: "center",
                   marginTop: "20px",
@@ -150,4 +104,4 @@ const NewTeacher = () => {
   );
 };
 
-export default NewTeacher;
+export default NewStudent;

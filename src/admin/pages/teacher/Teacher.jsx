@@ -153,7 +153,7 @@ const actionColumn = [
           <span className="updateButton">
             <Link
               style={{ textDecoration: "none", color: "inherit" }}
-              to="new-department"
+              to="new-teacher"
             >
               Modifier
             </Link>

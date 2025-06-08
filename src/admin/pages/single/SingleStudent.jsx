@@ -1,11 +1,11 @@
-import "./SingleTeacher.scss";
+import "./SingleStudent.scss";
 
-const SingleTeacher = () => {
+const SingleStudent = () => {
   return (
     <div className="new">
       <div className="newContainer">
         <div className="top">
-          <h1>Les informations d'un enseignant</h1>
+          <h1>Les informations d'un étudiant</h1>
         </div>
         <div className="bottom">
           <div className="imageContainer">
@@ -48,34 +48,7 @@ const SingleTeacher = () => {
                 <input
                   type="text"
                   id="dateNaissance"
-                  value="1989-05-15"
-                  readOnly
-                />
-              </div>
-              <div className="formInput">
-                <label htmlFor="diplomes">Les diplômes</label>
-                <input
-                  type="text"
-                  id="diplomes"
-                  value="Doctorat en Mathématiques - Université de la Sorbonne, Paris"
-                  readOnly
-                />
-              </div>
-              <div className="formInput">
-                <input
-                  style={{ marginTop: "26px" }}
-                  type="text"
-                  id="diplomes"
-                  value="Master en Analyse Mathématique - Université Cheikh Anta Diop, Dakar"
-                  readOnly
-                />
-              </div>
-              <div className="formInput">
-                <input
-                  style={{ marginTop: "26px" }}
-                  type="text"
-                  id="diplomes"
-                  value="Licence en Mathématiques Appliquées - Université de Nouakchott"
+                  value="1999-05-15"
                   readOnly
                 />
               </div>
@@ -89,20 +62,29 @@ const SingleTeacher = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="anneesExperience">Années d'expérience</label>
+                <label htmlFor="matricule">Matricule</label>
                 <input
                   type="text"
-                  id="anneesExperience"
-                  value="4"
+                  id="matricule"
+                  value="C16655"
                   readOnly
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="matieres">Les matières qu'il enseigne</label>
+                <label htmlFor="creditCumulatif">Crédit cumulatif</label>
                 <input
                   type="text"
-                  id="matieres"
-                  value="Analyse Mathématique, Algèbre Linéaire, Statistiques"
+                  id="creditCumulatif"
+                  value="60"
+                  readOnly
+                />
+              </div>
+              <div className="formInput">
+                <label htmlFor="moyenneAnnuelle">Moyenne annuelle</label>
+                <input
+                  type="text"
+                  id="moyenneAnnuelle"
+                  value="12.5"
                   readOnly
                 />
               </div>
@@ -114,4 +96,4 @@ const SingleTeacher = () => {
   );
 };
 
-export default SingleTeacher;
+export default SingleStudent;
