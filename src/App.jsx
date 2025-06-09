@@ -14,6 +14,7 @@ import {
   NewMatiere,
   NewTeacher,
   NewStudent,
+  AjouterModifierEmplois,
   Mod,
   Single,
   SingleSpeciality,
@@ -56,6 +57,7 @@ function App() {
               <Route path="admin/matiere" element={<Matiere />} />
               <Route path="admin/matiere/new-matiere" element={<NewMatiere />} />
               <Route path="admin/emplois" element={<Emplois />} />
+              <Route path="admin/emplois/new-emplois" element={<AjouterModifierEmplois />} />
               <Route path="admin/teacher" element={<Teacher />} />
               <Route path="admin/teacher/new-teacher" element={<NewTeacher />} />
               <Route path="admin/student" element={<Student />} />

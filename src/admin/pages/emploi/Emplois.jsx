@@ -1,312 +1,262 @@
-import "./Emplois.scss";
-import DataTable from "../../components/datatable/DataTable";
-import { Link } from "react-router-dom";
-
-const columns = [
-  { field: "id", headerName: "ID", width: 70 },
-  { field: "jours", headerName: "Les Jours", width: 130 },
-  { field: "horaire", headerName: "Horaire", width: 130 },
-  { field: "matiere", headerName: "Matière", width: 130 },
-  { field: "professeur", headerName: "Le professeur", width: 130 },
-  { field: "lieu", headerName: "Lieu", width: 130 },
-  { field: "enseignements", headerName: "Enseignements", width: 130 },
-];
-
-const rows = [
-  {
-    id: 1,
-    jours: "Lundi",
-    horaire: "08:00-10:00",
-    matiere: "Maths",
-    professeur: "M. Diallo",
-    lieu: "Salle 101",
-    enseignements: "Cours",
-  },
-  {
-    id: 2,
-    jours: "Lundi",
-    horaire: "10:00-12:00",
-    matiere: "Physique",
-    professeur: "Mme Sow",
-    lieu: "Salle 102",
-    enseignements: "TP",
-  },
-  {
-    id: 3,
-    jours: "Lundi",
-    horaire: "14:00-16:00",
-    matiere: "Chimie",
-    professeur: "M. Ba",
-    lieu: "Salle 103",
-    enseignements: "TD",
-  },
-  {
-    id: 4,
-    jours: "Lundi",
-    horaire: "16:00-18:00",
-    matiere: "Biologie",
-    professeur: "Mme Sy",
-    lieu: "Salle 104",
-    enseignements: "Cours",
-  },
-
-  {
-    id: 5,
-    jours: "Mardi",
-    horaire: "08:00-10:00",
-    matiere: "Informatique",
-    professeur: "M. Kane",
-    lieu: "Salle 201",
-    enseignements: "Cours",
-  },
-  {
-    id: 6,
-    jours: "Mardi",
-    horaire: "10:00-12:00",
-    matiere: "Algèbre",
-    professeur: "Mme Diop",
-    lieu: "Salle 202",
-    enseignements: "TD",
-  },
-  {
-    id: 7,
-    jours: "Mardi",
-    horaire: "14:00-16:00",
-    matiere: "Statistiques",
-    professeur: "M. Fall",
-    lieu: "Salle 203",
-    enseignements: "TP",
-  },
-  {
-    id: 8,
-    jours: "Mardi",
-    horaire: "16:00-18:00",
-    matiere: "Analyse",
-    professeur: "Mme Ndiaye",
-    lieu: "Salle 204",
-    enseignements: "Cours",
-  },
-
-  {
-    id: 9,
-    jours: "Mercredi",
-    horaire: "08:00-10:00",
-    matiere: "Maths",
-    professeur: "M. Diallo",
-    lieu: "Salle 301",
-    enseignements: "TD",
-  },
-  {
-    id: 10,
-    jours: "Mercredi",
-    horaire: "10:00-12:00",
-    matiere: "Physique",
-    professeur: "Mme Sow",
-    lieu: "Salle 302",
-    enseignements: "Cours",
-  },
-  {
-    id: 11,
-    jours: "Mercredi",
-    horaire: "14:00-16:00",
-    matiere: "Chimie",
-    professeur: "M. Ba",
-    lieu: "Salle 303",
-    enseignements: "TP",
-  },
-  {
-    id: 12,
-    jours: "Mercredi",
-    horaire: "16:00-18:00",
-    matiere: "Biologie",
-    professeur: "Mme Sy",
-    lieu: "Salle 304",
-    enseignements: "TD",
-  },
-
-  {
-    id: 13,
-    jours: "Jeudi",
-    horaire: "08:00-10:00",
-    matiere: "Informatique",
-    professeur: "M. Kane",
-    lieu: "Salle 401",
-    enseignements: "TP",
-  },
-  {
-    id: 14,
-    jours: "Jeudi",
-    horaire: "10:00-12:00",
-    matiere: "Algèbre",
-    professeur: "Mme Diop",
-    lieu: "Salle 402",
-    enseignements: "Cours",
-  },
-  {
-    id: 15,
-    jours: "Jeudi",
-    horaire: "14:00-16:00",
-    matiere: "Statistiques",
-    professeur: "M. Fall",
-    lieu: "Salle 403",
-    enseignements: "TD",
-  },
-  {
-    id: 16,
-    jours: "Jeudi",
-    horaire: "16:00-18:00",
-    matiere: "Analyse",
-    professeur: "Mme Ndiaye",
-    lieu: "Salle 404",
-    enseignements: "Cours",
-  },
-
-  {
-    id: 17,
-    jours: "Vendredi",
-    horaire: "08:00-10:00",
-    matiere: "Maths",
-    professeur: "M. Diallo",
-    lieu: "Salle 501",
-    enseignements: "TP",
-  },
-  {
-    id: 18,
-    jours: "Vendredi",
-    horaire: "10:00-12:00",
-    matiere: "Physique",
-    professeur: "Mme Sow",
-    lieu: "Salle 502",
-    enseignements: "TD",
-  },
-  {
-    id: 19,
-    jours: "Vendredi",
-    horaire: "14:00-16:00",
-    matiere: "Chimie",
-    professeur: "M. Ba",
-    lieu: "Salle 503",
-    enseignements: "Cours",
-  },
-  {
-    id: 20,
-    jours: "Vendredi",
-    horaire: "16:00-18:00",
-    matiere: "Biologie",
-    professeur: "Mme Sy",
-    lieu: "Salle 504",
-    enseignements: "TP",
-  },
-
-  {
-    id: 21,
-    jours: "Samedi",
-    horaire: "08:00-10:00",
-    matiere: "Informatique",
-    professeur: "M. Kane",
-    lieu: "Salle 601",
-    enseignements: "TD",
-  },
-  {
-    id: 22,
-    jours: "Samedi",
-    horaire: "10:00-12:00",
-    matiere: "Algèbre",
-    professeur: "Mme Diop",
-    lieu: "Salle 602",
-    enseignements: "TP",
-  },
-  {
-    id: 23,
-    jours: "Samedi",
-    horaire: "14:00-16:00",
-    matiere: "Statistiques",
-    professeur: "M. Fall",
-    lieu: "Salle 603",
-    enseignements: "Cours",
-  },
-  {
-    id: 24,
-    jours: "Samedi",
-    horaire: "16:00-18:00",
-    matiere: "Analyse",
-    professeur: "Mme Ndiaye",
-    lieu: "Salle 604",
-    enseignements: "TD",
-  },
-
-  {
-    id: 25,
-    jours: "Dimanche",
-    horaire: "08:00-10:00",
-    matiere: "Maths",
-    professeur: "M. Diallo",
-    lieu: "Salle 701",
-    enseignements: "Cours",
-  },
-  {
-    id: 26,
-    jours: "Dimanche",
-    horaire: "10:00-12:00",
-    matiere: "Physique",
-    professeur: "Mme Sow",
-    lieu: "Salle 702",
-    enseignements: "TD",
-  },
-  {
-    id: 27,
-    jours: "Dimanche",
-    horaire: "14:00-16:00",
-    matiere: "Chimie",
-    professeur: "M. Ba",
-    lieu: "Salle 703",
-    enseignements: "TP",
-  },
-  {
-    id: 28,
-    jours: "Dimanche",
-    horaire: "16:00-18:00",
-    matiere: "Biologie",
-    professeur: "Mme Sy",
-    lieu: "Salle 704",
-    enseignements: "Cours",
-  },
-  {
-    id: 29,
-    jours: "Dimanche",
-    horaire: "18:00-20:00",
-    matiere: "Informatique",
-    professeur: "M. Kane",
-    lieu: "Salle 705",
-    enseignements: "Cours",
-  },
-  {
-    id: 30,
-    jours: "Dimanche",
-    horaire: "20:00-22:00",
-    matiere: "Analyse",
-    professeur: "Mme Ndiaye",
-    lieu: "Salle 706",
-    enseignements: "TP",
-  },
-];
+import React, { useState } from 'react';
+import {
+  Button,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  Pagination,
+  Box,
+  Typography,
+  Card,
+  CardContent
+} from '@mui/material';
+import { Edit, Delete, Download } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+import jsPDF from 'jspdf';
+import './Emplois.scss';
 
 const Emplois = () => {
+  const [filterSpecialite, setFilterSpecialite] = useState('all');
+  const [filterType, setFilterType] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const [emplois] = useState([
+    {
+      id: 1,
+      jour: 'Lundi',
+      heureDebut: '08:30',
+      heureFin: '10:30',
+      matiere: 'Petit & Javascript',
+      enseignant: 'Dr. Diakité',
+      lieu: 'Salle A1',
+      type: 'TP',
+      specialite: 'Informatique',
+      code: 'M4002'
+    },
+    {
+      id: 2,
+      jour: 'Lundi',
+      heureDebut: '10:30',
+      heureFin: '12:30',
+      matiere: 'Python',
+      enseignant: 'Dr. Diakité',
+      lieu: 'Salle B2',
+      type: 'Cours',
+      specialite: 'Informatique',
+      code: 'M4002'
+    },
+    {
+      id: 3,
+      jour: 'Mardi',
+      heureDebut: '10:30',
+      heureFin: '12:30',
+      matiere: 'Python',
+      enseignant: 'Dr. Farouq',
+      lieu: 'Salle C3',
+      type: 'Cours',
+      specialite: 'Informatique',
+      code: 'M4002'
+    }
+  ]);
+
+  const jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+  const heuresCreneaux = ['08:30-10:30', '10:30-12:30', '14:00-16:00', '16:00-18:00'];
+
+  const filteredEmplois = emplois.filter(emploi => {
+    return (filterSpecialite === 'all' || emploi.specialite === filterSpecialite) &&
+           (filterType === 'all' || emploi.type === filterType);
+  });
+
+  const getEmploiForSlot = (jour, creneau) => {
+    return filteredEmplois.find(emploi => {
+      const emploiCreneau = emploi.heureDebut + '-' + emploi.heureFin;
+      return emploi.jour === jour && emploiCreneau === creneau;
+    });
+  };
+
+  const handleDownload = () => {
+    const pdf = new jsPDF('landscape');
+    
+    pdf.setFontSize(16);
+    pdf.text('Emploi du Temps', 20, 20);
+    
+    pdf.setFontSize(10);
+    const filterText = 'Spécialité: ' + (filterSpecialite === 'all' ? 'Toutes' : filterSpecialite) + ' | Type: ' + (filterType === 'all' ? 'Tous' : filterType);
+    pdf.text(filterText, 20, 30);
+    
+    const startY = 40;
+    const cellHeight = 25;
+    const dayColWidth = 40;
+    
+    pdf.setFontSize(8);
+    pdf.text('Horaires', 20, startY + 5);
+    
+    jours.forEach((jour, index) => {
+      pdf.text(jour, 50 + (index * dayColWidth), startY + 5);
+    });
+    
+    heuresCreneaux.forEach((creneau, rowIndex) => {
+      const y = startY + 10 + (rowIndex * cellHeight);
+      pdf.text(creneau, 20, y + 5);
+      
+      jours.forEach((jour, colIndex) => {
+        const emploi = getEmploiForSlot(jour, creneau);
+        const x = 50 + (colIndex * dayColWidth);
+        
+        if (emploi) {
+          pdf.setFontSize(6);
+          pdf.text(emploi.code, x, y + 3);
+          pdf.text(emploi.type, x, y + 8);
+          pdf.text(emploi.matiere.substring(0, 15), x, y + 13);
+          pdf.text(emploi.enseignant, x, y + 18);
+        }
+      });
+    });
+    
+    const fileName = 'emploi-du-temps-' + new Date().toISOString().split('T')[0] + '.pdf';
+    pdf.save(fileName);
+  };
+
   return (
-    <>
-      <div className="emplois">
-        <DataTable
-          title="Liste des emplois"
-          columns={columns}
-          rows={rows}
-          link="new-emplois"
-        ></DataTable>
-        <div className="cellAction">
-          <span className="updateButton">Modifier</span>
-          <span className="deleteButton">Supprimer</span>
-        </div>
-      </div>
-    </>
+    <div className="emplois-container">
+      <Card className="emplois-card">
+        <CardContent>
+          <Typography variant="h4" component="h1" className="page-title">
+            Gérer les emplois du temps
+          </Typography>
+          
+          <Box className="filters-section">
+            <FormControl className="filter-select">
+              <InputLabel>Filtrer par spécialité</InputLabel>
+              <Select
+                value={filterSpecialite}
+                onChange={(e) => setFilterSpecialite(e.target.value)}
+                label="Filtrer par spécialité"
+              >
+                <MenuItem value="all">Toutes les spécialités</MenuItem>
+                <MenuItem value="Informatique">Informatique</MenuItem>
+                <MenuItem value="Mathématiques">Mathématiques</MenuItem>
+                <MenuItem value="Physique">Physique</MenuItem>
+              </Select>
+            </FormControl>
+            
+            <FormControl className="filter-select">
+              <InputLabel>Filtrer par type</InputLabel>
+              <Select
+                value={filterType}
+                onChange={(e) => setFilterType(e.target.value)}
+                label="Filtrer par type"
+              >
+                <MenuItem value="all">Tous les types</MenuItem>
+                <MenuItem value="Cours">Cours</MenuItem>
+                <MenuItem value="TP">TP</MenuItem>
+                <MenuItem value="TD">TD</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+
+          <div className="table-section">
+            <TableContainer component={Paper} className="table-container">
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell className="time-header">Horaires</TableCell>
+                    {jours.map(jour => (
+                      <TableCell key={jour} className="day-header">
+                        {jour}
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {heuresCreneaux.map(creneau => (
+                    <TableRow key={creneau}>
+                      <TableCell className="time-cell">
+                        {creneau}
+                      </TableCell>
+                      {jours.map(jour => {
+                        const emploi = getEmploiForSlot(jour, creneau);
+                        return (
+                          <TableCell key={jour + '-' + creneau} className="slot-cell">
+                            {emploi && (
+                              <div className="emploi-slot">
+                                <div className="emploi-code">{emploi.code}</div>
+                                <div className="emploi-type">{emploi.type}</div>
+                                <div className="emploi-matiere">{emploi.matiere}</div>
+                                <div className="emploi-enseignant">{emploi.enseignant}</div>
+                                <div className="emploi-actions">
+                                  <Button
+                                    size="small"
+                                    variant="outlined"
+                                    className="action-btn"
+                                    component={Link}
+                                    to={'/ajouter-modifier-emploi/' + emploi.id}
+                                  >
+                                    <Edit fontSize="small" />
+                                  </Button>
+                                  <Button
+                                    size="small"
+                                    variant="outlined"
+                                    className="action-btn delete-btn"
+                                  >
+                                    <Delete fontSize="small" />
+                                  </Button>
+                                </div>
+                              </div>
+                            )}
+                          </TableCell>
+                        );
+                      })}
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </div>
+
+          <Box className="actions-section">
+            <Button
+              variant="contained"
+              color="success"
+              component={Link}
+              to="new-emplois"
+              className="create-btn"
+            >
+              Créer un emploi du temps
+            </Button>
+            
+            <Button
+              variant="outlined"
+              onClick={handleDownload}
+              className="download-btn"
+              startIcon={<Download />}
+            >
+              Télécharger en PDF
+            </Button>
+          </Box>
+
+          <Box className="pagination-section">
+            <Pagination
+              count={100}
+              page={currentPage}
+              onChange={(event, value) => setCurrentPage(value)}
+              color="primary"
+            />
+            <Typography variant="body2" className="pagination-info">
+              1/2
+            </Typography>
+          </Box>
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 

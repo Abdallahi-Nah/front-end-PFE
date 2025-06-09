@@ -6,6 +6,7 @@ export { default as NewModule } from "../pages/new/NewModule";
 export { default as NewMatiere } from "../pages/new/NewMatiere";
 export { default as NewTeacher } from "../pages/new/NewTeacher";
 export { default as NewStudent } from "../pages/new/NewStudent";
+export { default as AjouterModifierEmplois } from "../pages/new/AjouterModifierEmplois";
 export { default as Speciality } from "../pages/speciality/Speciality";
 export { default as Mod } from "../pages/module/Module";
 export { default as Single } from "../pages/single/Single";
