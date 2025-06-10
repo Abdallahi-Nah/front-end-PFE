@@ -23,9 +23,6 @@ const Navbar = () => {
               <span>Français</span>
             </div>
             <div className="item">
-              <Switch style={{ color: "#0A9048" }} className="icon" />
-            </div>
-            <div className="item">
               <FullscreenIcon className="icon" />
             </div>
             <div className="item">

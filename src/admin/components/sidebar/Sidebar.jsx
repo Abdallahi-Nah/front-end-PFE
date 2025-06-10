@@ -30,7 +30,7 @@ const Sidebar = () => {
               <HomeIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="/"
                 >
                   Accueil
@@ -42,7 +42,7 @@ const Sidebar = () => {
               <ApartmentIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/department"
                 >
                   Les Départements
@@ -53,7 +53,7 @@ const Sidebar = () => {
               <SchoolIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/speciality"
                 >
                   Les Spécialités
@@ -64,7 +64,7 @@ const Sidebar = () => {
               <ViewModuleIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/module"
                 >
                   Les Modules
@@ -75,7 +75,7 @@ const Sidebar = () => {
               <MenuBookIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/matiere"
                 >
                   Les Matières
@@ -86,7 +86,7 @@ const Sidebar = () => {
               <CalendarMonthIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/emplois"
                 >
                   Emplois du temps
@@ -99,7 +99,7 @@ const Sidebar = () => {
               <HailIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/teacher"
                 >
                   Les enseignants
@@ -110,7 +110,7 @@ const Sidebar = () => {
               <GroupIcon className="icon" />
               <span>
                 <Link
-                  style={{ textDecoration: "none", color: "#222222" }}
+                  style={{ textDecoration: "none", all: "inherit" }}
                   to="admin/student"
                 >
                   Les étudiants
